@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: Plain Regular;
+  src:url(../fonts/PLAIN-REGULAR.OTF)
+}
+
+@font-face{
+  font-family: Plain Medium; 
+  src:url(../fonts/PLAIN-MEDIUM.OTF)
+}
+
+@font-face{
+  font-family: Plain Bold; 
+  src:url(../fonts/PLAIN-BOLD.OTF)
+}
+
+@font-face{
+  font-family: Plain Light;
+  src:url(../fonts/PLAIN-LIGHT.OTF)
+}
+
+@font-face{
+  font-family: Plain Thin;
+  src:url(../fonts/PLAIN-THIN.OTF)
+}
+
+.font-thin{
+  font-family: Plain Thin;
+}
+
+.font-light{
+  font-family: Plain Light;
+}
+
+.font-medium{
+  font-family: Plain Medium;
+}
+
+.font-bold{
+  font-family: Plain Bold;
+}
+
+.font-regular{
+  font-family: Plain Regular;
+}

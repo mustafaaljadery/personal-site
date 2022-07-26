@@ -3,10 +3,11 @@ import Header from '../components/Header';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import Container from '../components/Container';
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Container>
       <Header />
       <main className="flex flex-col items-center">
         <div className="w-[45%] mb-28">
@@ -47,12 +48,14 @@ const Home: NextPage = () => {
                 <p className="font-thin w-[7%] text-2xl my-auto">
                   01
                 </p>
-                <a className="font-medium w-[75%] text-2xl hover:py-0.5">
-                  Zero to One ↗
-                </a>
+                <Link href="/books/zero-to-one">
+                  <a className="font-medium w-[75%] text-2xl hover:py-0.5">
+                    Zero to One ↗
+                  </a>
+                </Link>
                 <a
                   href="/books/zero-to-one"
-                  className="h-auto w-[18%] bg-[#595959] rounded text-white font-medium text-sm flex flex-col justify-center items-center"
+                  className="h-auto w-[18%] bg-[#595959] rounded text-white font-medium text-sm flex flex-col justify-center items-center hover:opacity-75"
                 >
                   View Summary
                 </a>
@@ -72,7 +75,12 @@ const Home: NextPage = () => {
                 <p className="font-thin w-[7%] text-2xl my-auto">
                   01
                 </p>
-                <a className="font-medium w-[93%] text-2xl hover:py-0.5">
+                <a
+                  href="https://mustafaaljadery.github.io/#/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium w-[93%] text-2xl hover:py-0.5"
+                >
                   Calculus Textbooks ↗
                 </a>
               </div>
@@ -81,7 +89,12 @@ const Home: NextPage = () => {
                 <p className="font-thin w-[7%] text-2xl my-auto">
                   02
                 </p>
-                <a className="font-medium w-[93%] text-2xl hover:py-0.5">
+                <a
+                  target="_blank"
+                  href="/speed.pdf"
+                  rel="noopener noreferrer"
+                  className="font-medium w-[93%] text-2xl hover:py-0.5"
+                >
                   Smart Contract Parallel Execution ↗
                 </a>
               </div>
@@ -90,7 +103,12 @@ const Home: NextPage = () => {
                 <p className="font-thin w-[7%] text-2xl my-auto">
                   03
                 </p>
-                <a className="font-medium w-[93%] text-2xl hover:py-0.5">
+                <a
+                  href="/security.pdf"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="font-medium w-[93%] text-2xl hover:py-0.5"
+                >
                   Analysis of Blockchain Security ↗
                 </a>
               </div>
@@ -105,7 +123,7 @@ const Home: NextPage = () => {
         </div>
       </main>
       <Footer />
-    </>
+    </Container>
   );
 };
 

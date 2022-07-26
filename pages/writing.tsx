@@ -2,10 +2,11 @@ import type { NextPage } from 'next';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Image from 'next/image';
+import Container from '../components/Container';
 
 const Writing: NextPage = () => {
   return (
-    <>
+    <Container title="Writing - Mustafa Aljadery">
       <Header />
       <main className="flex flex-col items-center">
         <div className="w-[45%] mb-24">
@@ -32,14 +33,25 @@ const Writing: NextPage = () => {
             those areas. If you’re working on something interesting, I
             would love to contribute to it.{' '}
           </p>
-          <a className="mt-24 text-3xl text-[#B62D13] font-medium">
+
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mustafaaljadery.github.io/#/"
+            className="mt-24 text-3xl text-[#B62D13] font-medium"
+          >
             Calculus Textbooks ↗
           </a>
           <p className="mt-3 mb-10 font-light text-[#B62D13] w-4/5">
             Authored three textbooks teaching single variable integral
             and differential calculus, and multivariable calculus.
           </p>
-          <a className="text-3xl text-[#301AAB] font-medium">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/speed.pdf"
+            className="text-3xl text-[#301AAB] font-medium"
+          >
             Parallel Execution of Smart Contracts on Blockchains
             Without Compromise of Security and Decentralization ↗
           </a>
@@ -47,7 +59,12 @@ const Writing: NextPage = () => {
             Proposal of an optimization technique on the execution
             layer of smart contracts. Up to 3x speed increase on EVM.
           </p>
-          <a className="text-3xl text-[#006D3A] font-medium w-4/5">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/security.pdf"
+            className="text-3xl text-[#006D3A] font-medium w-4/5"
+          >
             Compiled Analysis on Blockchain Security ↗
           </a>
           <p className="mt-3 font-light text-[#006D3A] w-4/5">
@@ -58,7 +75,7 @@ const Writing: NextPage = () => {
         </div>
       </main>
       <Footer />
-    </>
+    </Container>
   );
 };
 

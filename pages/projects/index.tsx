@@ -3,10 +3,11 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
+import Container from '../../components/Container';
 
 const Projects: NextPage = () => {
   return (
-    <>
+    <Container title="Projects - Mustafa Aljadery">
       <Header />
       <main className="flex flex-col items-center">
         <div className="w-[45%] mb-32">
@@ -40,7 +41,7 @@ const Projects: NextPage = () => {
         </div>
       </main>
       <Footer />
-    </>
+    </Container>
   );
 };
 

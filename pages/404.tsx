@@ -16,8 +16,8 @@ const Error: NextPage = () => {
           </h2>
           <p className="mt-5 w-4/5 font-light">
             Unfortunately this page is currently not available. If
-            it's something crucial, I encourage you to contact me to
-            fix it.
+            it&apos;s something crucial, I encourage you to contact me
+            to fix it.
           </p>
           <div className="my-12 flex flex-col items-center">
             <Image width={540} height={324} src="/404.gif" />

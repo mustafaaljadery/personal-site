@@ -53,12 +53,11 @@ const Home: NextPage = () => {
                     Zero to One ↗
                   </a>
                 </Link>
-                <a
-                  href="/books/zero-to-one"
-                  className="h-auto w-[18%] bg-[#595959] rounded text-white font-medium text-sm flex flex-col justify-center items-center hover:opacity-75"
-                >
-                  View Summary
-                </a>
+                <Link href="/books/zero-to-one">
+                  <a className="h-auto w-[18%] bg-[#595959] rounded text-white font-medium text-sm flex flex-col justify-center items-center hover:opacity-75">
+                    View Summary
+                  </a>
+                </Link>
               </div>
               <hr />
             </div>

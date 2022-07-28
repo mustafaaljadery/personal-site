@@ -10,8 +10,8 @@ const NavItem: React.FC<NavItemProps> = ({ href, text }) => {
   const router = useRouter();
   const isActive = router.asPath === href;
   return (
-    <Link href={href}>
-      <div className="hover:bg-gray-100 px-3 py-1 rounded-lg">
+    <div className="hover:bg-gray-100 px-3 py-1 rounded-lg">
+      <Link href={href}>
         <a
           className={
             isActive ? 'font-regular' : 'font-regular text-gray-600'
@@ -19,8 +19,8 @@ const NavItem: React.FC<NavItemProps> = ({ href, text }) => {
         >
           {text}
         </a>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 

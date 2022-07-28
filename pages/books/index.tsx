@@ -3,10 +3,11 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Image from 'next/image';
 import Link from 'next/link';
+import Container from '../../components/Container';
 
 const Books: NextPage = () => {
   return (
-    <>
+    <Container title="Books - Mustafa Aljadery">
       <Header />
       <main className="flex flex-col items-center">
         <div className="w-[45%] mb-32">
@@ -27,7 +28,10 @@ const Books: NextPage = () => {
           <p className="mt-12 mb-2 text-xl font-bold">
             Email me book recommendations
           </p>
-          <a className="text-lg font-light underline underline-offset-1">
+          <a
+            href="mailto:aljadery@usc.edu"
+            className="text-lg font-light underline underline-offset-1"
+          >
             aljadery[at]usc.edu
           </a>
 
@@ -43,7 +47,11 @@ const Books: NextPage = () => {
                 />
               </div>
               <div className="w-auto">
-                <a className="text-2xl font-medium">Zero to One ↗</a>
+                <Link href="/books/zero-to-one">
+                  <a className="text-2xl font-medium">
+                    Zero to One ↗
+                  </a>
+                </Link>
                 <p className="mt-1 font-regular text-[#4A4A4A]">
                   Peter Thiel
                 </p>
@@ -67,7 +75,7 @@ const Books: NextPage = () => {
                 />
               </div>
               <div className="w-auto">
-                <Link href="/">
+                <Link href="/books/system-design-interview-v1">
                   <a className="text-2xl font-medium">
                     System Design Interview V1 ↗
                   </a>
@@ -91,9 +99,11 @@ const Books: NextPage = () => {
                 />
               </div>
               <div className="w-auto">
-                <a className="text-2xl font-medium">
-                  System Design Interview V2 ↗
-                </a>
+                <Link href="/books/system-design-interview-v2">
+                  <a className="text-2xl font-medium">
+                    System Design Interview V2 ↗
+                  </a>
+                </Link>
                 <p className="mt-1 font-regular text-[#4A4A4A]">
                   Alex Xu
                 </p>
@@ -108,7 +118,7 @@ const Books: NextPage = () => {
         </div>
       </main>
       <Footer />
-    </>
+    </Container>
   );
 };
 

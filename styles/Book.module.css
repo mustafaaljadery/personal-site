@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Plain Regular;
+  src: url(../fonts/PLAIN-REGULAR.OTF);
+}
+
+@font-face{
+  font-family: Plain Thin;
+  src: url(../fonts/PLAIN-THIN.OTF)
+}
+
+@font-face{
+  font-family: Plain Light;
+  src: url(../fonts/PLAIN-LIGHT.OTF)
+}
+
+.book ul{
+  font-family: Plain Light;
+  list-style-type: disc;
+  font-size: 21px;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+.book ol{
+  font-family: Plain Light;
+  list-style-type: decimal;
+  font-size: 21px;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+.book li{
+  margin-top: 12px;
+  font-family: Plain Thin;
+  font-size: 19px;
+}
+
+.book p{
+  font-family: Plain Light;
+  font-size: 21px;
+  margin-top: 28px;
+}

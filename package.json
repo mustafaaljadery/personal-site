@@ -10,19 +10,20 @@
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
+    "gray-matter": "^4.0.3",
+    "mdx-prism": "^0.3.3",
     "next": "^12.2.3",
     "next-mdx-remote": "^4.1.0",
     "next-plugin-preact": "^3.0.7",
-    "preact": "^10.10.0",
-    "preact-render-to-string": "^5.2.1",
-    "react": "npm:@preact/compat@^17.1.1",
-    "react-dom": "npm:@preact/compat@^17.1.1",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-code-titles": "^1.1.0",
     "rehype-prism-plus": "^1.4.2",
     "rehype-slug": "^5.0.1",
-    "remark-gfm": "^3.0.1"
+    "remark-code-titles": "^0.1.1",
+    "remark-gfm": "^3.0.1",
+    "use-delayed-render": "0.0.7"
   },
   "devDependencies": {
     "@types/node": "18.0.6",

@@ -10,7 +10,7 @@ interface Props {
   title: string;
 }
 
-const ListEntry: React.FC<Props> = ({ href, chapter, title }) => {
+const ChapterEntry: React.FC<Props> = ({ href, chapter, title }) => {
   return (
     <div className="flex flex-col">
       <p className="mt-3 font-light text-[#818181] text-lg">
@@ -34,16 +34,16 @@ const ZeroToOne: NextPage = () => {
       <Header />
       <main className="flex flex-col items-center">
         <div className="w-[45%] mb-32">
-          <Link href="/books">
-            <div className="mt-12 flex flex-row space-x-2">
+          <div className="mt-12 flex flex-row space-x-2">
+            <Link href="/books">
               <a className="font-regular text-[#575757] hover:font-bold">
                 &larr; Other Books
               </a>
-              <div className="my-auto mt-0.5">
-                <Image src="/book.svg" height={15} width={15} />
-              </div>
+            </Link>
+            <div className="my-auto mt-0.5">
+              <Image src="/book.svg" height={15} width={15} />
             </div>
-          </Link>
+          </div>
           <h1 className="mt-4 font-bold text-[#7191B7] text-6xl">
             Zero to One
           </h1>
@@ -82,15 +82,75 @@ const ZeroToOne: NextPage = () => {
           <h2 className="mt-20 text-3xl font-medium text-[#7191B7] mb-4">
             Table of Contents
           </h2>
-          <ListEntry
-            href="/"
+          <ChapterEntry
+            href="/books/zero-to-one/1.the-challenge-of-the-future"
             chapter="Chapter 1"
-            title="Zero to One"
+            title="The Challenge of the Future"
           />
-          <ListEntry
-            href="/"
+          <ChapterEntry
+            href="/books/zero-to-one/2.party-like-its-1999"
             chapter="Chapter 2"
-            title="Missing Number"
+            title="Party Like It's 1999"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/3.all-happy-companies-are-different"
+            chapter="Chapter 3"
+            title="All Happy Companies Are Different"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/4.the-ideology-of-competition"
+            chapter="Chapter 4"
+            title="The Ideology of Competition"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/5.last-mover-advantage"
+            chapter="Chapter 5"
+            title="Last Mover Advantage"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/6.you-are-not-a-lottery-ticket"
+            chapter="Chapter 6"
+            title="You Are Not a Lottery Ticket"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/7.follow-the-money"
+            chapter="Chapter 7"
+            title="Follow the Money"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/8.secrets"
+            chapter="Chapter 8"
+            title="Secrets"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/9.foundations"
+            chapter="Chapter 9"
+            title="Foundations"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/10.the-mechanics-of-mafia"
+            chapter="Chapter 10"
+            title="The Mechanics of Mafia"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/11.if-you-build-it-will-they-come"
+            chapter="Chapter 11"
+            title="If You Build It, Will They Come?"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/12.man-and-machine"
+            chapter="Chapter 12"
+            title="Man and Machine"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/13.seeing-green"
+            chapter="Chapter 13"
+            title="Seeing Green"
+          />
+          <ChapterEntry
+            href="/books/zero-to-one/14.the-founders-paradox"
+            chapter="Chapter 14"
+            title="The Founder's Paradox"
           />
         </div>
       </main>

@@ -4,8 +4,8 @@ import MobileMenu from './MobileMenu';
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center">
-      <div className="w-[45%]">
-        <div className="flex flex-row space-x-48 my-16">
+      <div className="w-5/6 sm:w-4/5 md:w-[70%] lg:w-[45%]">
+        <div className="flex flex-col space-y-10 md:space-y-0 md:flex-row md:space-x-48 md:my-16">
           <div className="flex flex-col space-y-5">
             <Link href="/">
               <a className="font-regular text-lg hover:font-bold">
@@ -66,8 +66,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center mb-20">
-          <span className="text-lg text-[#737373] font-medium">
+        <div className="flex flex-col items-center mt-14 md:mt-0 mb-20">
+          <span className="md:text-lg text-[#737373] font-medium text-center md:text-left">
             MADE WITH ❤️ BY MUSTAFA ALJADERY.
           </span>
         </div>

@@ -28,7 +28,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, text }) => {
 const Header = () => {
   return (
     <nav className="flex flex-col items-center">
-      <div className="w-[95%] lg:w-[45%] md:flex md:flex-row mt-5">
+      <div className="w-[90%] sm:w-[85%] md:w-[70%] lg:w-3/5 xl:w-1/2 2xl:w-[45%] md:flex md:flex-row mt-5">
         <MobileMenu />
         <NavItem href="/" text="Home" />
         <NavItem href="/projects" text="Projects" />

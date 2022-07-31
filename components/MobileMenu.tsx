@@ -15,10 +15,8 @@ export default function MobileMenu() {
   function toggleMenu() {
     if (isMenuOpen) {
       setIsMenuOpen(false);
-      document.body.style.overflow = '';
     } else {
       setIsMenuOpen(true);
-      document.body.style.overflow = 'hidden';
     }
   }
 
@@ -43,12 +41,12 @@ export default function MobileMenu() {
         <ul
           className={cn(
             styles.menu,
-            'flex flex-col absolute bg-white',
+            'flex flex-col items-center absolute bg-white',
             isMenuRendered && styles.menuRendered
           )}
         >
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 font-medium"
+            className="border-b border-gray-300 text-gray-900 text-sm font-medium"
             style={{ transitionDelay: '150ms' }}
           >
             <Link href="/">
@@ -56,7 +54,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 font-medium"
+            className="border-b border-gray-300 text-gray-900 text-sm font-medium"
             style={{ transitionDelay: '175ms' }}
           >
             <Link href="/projects">
@@ -64,7 +62,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 font-medium"
+            className="border-b border-gray-300 text-gray-900 text-sm font-medium"
             style={{ transitionDelay: '200ms' }}
           >
             <Link href="/writing">
@@ -72,7 +70,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 font-medium"
+            className="border-b border-gray-300 text-gray-900 text-sm font-medium"
             style={{ transitionDelay: '250ms' }}
           >
             <Link href="/books">
@@ -80,10 +78,10 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 font-medium"
+            className="border-b border-gray-300 text-gray-900 text-sm font-medium"
             style={{ transitionDelay: '275ms' }}
           >
-            <Link href="/resume">
+            <Link href="/resume.pdf">
               <a className="flex w-auto pb-4">Resume</a>
             </Link>
           </li>

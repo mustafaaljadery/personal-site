@@ -1,5 +1,6 @@
 .burger {
   transition: opacity 300ms ease;
+  z-index: 3;
   border: 0;
   background: transparent;
   width: 40px;
@@ -47,7 +48,7 @@
 
 .menuRendered li {
   border-color: rgb(229 231 235);
-  width: 100%;
+  width: 90%;
   transform: translateX(0);
   opacity: 1;
 }

@@ -37,7 +37,7 @@ type PostPageProps = {
 const Page = ({ source, frontMatter }: PostPageProps) => {
   return (
     <Container
-      title={`${frontMatter.title} - Zero to One`}
+      title={`${frontMatter.title} - CSES Solution`}
       description={`${frontMatter.description}`}
       date={frontMatter.date}
       type="article"

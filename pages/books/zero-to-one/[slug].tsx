@@ -43,14 +43,14 @@ const Page = ({ source, frontMatter }: PostPageProps) => {
     >
       <Header />
       <article className="flex flex-col items-center">
-        <div className="w-[45%] mb-20">
-          <p className="mt-12 text-2xl font-light text-[#686868]">
+        <div className="w-[90%] sm:w-[85%] md:w-[70%] lg:w-3/5 xl:w-1/2 2xl:w-[45%] mb-20">
+          <p className="mt-5 md:mt-12 text-xl md:text-2xl font-light text-[#686868]">
             {frontMatter.chapter}
           </p>
-          <h1 className="mt-2 font-light text-4xl ">
+          <h1 className="mt-2 font-light text-3xl md:text-4xl ">
             {frontMatter.title}
           </h1>
-          <p className="mt-3 font-light text-[#818181] text-sm mb-12">{`Posted on ${frontMatter.date}`}</p>
+          <p className="mt-3 font-light text-[#818181] text-xs md:text-sm mb-8 md:mb-12">{`Posted on ${frontMatter.date}`}</p>
           <div className={styles.book}>
             <MDXRemote {...source} components={components} />
           </div>

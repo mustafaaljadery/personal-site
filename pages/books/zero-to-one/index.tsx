@@ -13,12 +13,12 @@ interface Props {
 const ChapterEntry: React.FC<Props> = ({ href, chapter, title }) => {
   return (
     <div className="flex flex-col">
-      <p className="mt-3 font-light text-[#818181] text-lg">
+      <p className="mt-3 font-light text-[#818181] md:text-lg">
         {chapter}
       </p>
       <div className="mb-4 mt-1.5">
         <Link href={href}>
-          <a className="font-medium text-2xl hover:underline hover:underline-offset-1">
+          <a className="font-medium text-xl md:text-2xl hover:underline hover:underline-offset-1">
             {title}
           </a>
         </Link>
@@ -33,8 +33,8 @@ const ZeroToOne: NextPage = () => {
     <>
       <Header />
       <main className="flex flex-col items-center">
-        <div className="w-[45%] mb-32">
-          <div className="mt-12 flex flex-row space-x-2">
+        <div className="w-[90%] sm:w-[85%] md:w-[70%] lg:w-3/5 xl:w-1/2 2xl:w-[45%] mb-32">
+          <div className="mt-5 md:mt-12 flex flex-row space-x-2">
             <Link href="/books">
               <a className="font-regular text-[#575757] hover:font-bold">
                 &larr; Other Books
@@ -44,42 +44,46 @@ const ZeroToOne: NextPage = () => {
               <Image src="/book.svg" height={15} width={15} />
             </div>
           </div>
-          <h1 className="mt-4 font-bold text-[#7191B7] text-6xl">
+          <h1 className="mt-4 font-bold text-[#7191B7] text-5xl md:text-6xl">
             Zero to One
           </h1>
-          <div className="flex flex-row space-x-12 mt-8">
+          <div className="flex flex-row space-x-5 md:space-x-12 mt-8">
             <div className="flex flex-col space-y-1">
-              <p className="font-regular text-[#656565]">
+              <p className="font-regular text-[#656565] text-sm md:text-base">
                 Written By
               </p>
-              <p className="font-medium">
+              <p className="font-medium text-sm md:text-base">
                 Peter Thiel, Blake Masters
               </p>
             </div>
             <div className="flex flex-col space-y-1">
-              <p className="font-regular text-[#656565]">Published</p>
-              <p className="font-medium">Crown Business</p>
+              <p className="font-regular text-[#656565] text-sm md:text-base">
+                Published
+              </p>
+              <p className="font-medium text-sm md:text-base">
+                Crown Business
+              </p>
             </div>
           </div>
           <div className="mt-8">
             <a
               href="https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296"
-              className="font-regular underline text-lg"
+              className="font-regular underline md:text-lg"
               target="_blank"
               rel="noreferrer noopener"
             >
               Buy Book
             </a>
           </div>
-          <p className="mt-16 font-light text-lg w-3/5">
+          <p className="mt-8 md:mt-16 font-light md:text-lg w-full sm:w-4/5 md:w-3/5">
             “When a risk taker writes a book, read it. In the case of
             Peter Thiel, read it twice. Or, to be safe, three times.
             This is a classic.”
           </p>
-          <p className="mt-3 font-medium text-xl">
+          <p className="mt-3 font-medium text-lg md:text-xl">
             Nassim Nicholas Taleb
           </p>
-          <h2 className="mt-20 text-3xl font-medium text-[#7191B7] mb-4">
+          <h2 className="mt-12 md:mt-20 text-2xl md:text-3xl font-medium text-[#7191B7] mb-4">
             Table of Contents
           </h2>
           <ChapterEntry

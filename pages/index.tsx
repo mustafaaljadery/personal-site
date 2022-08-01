@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <Container>
       <Header />
       <main className="flex flex-col items-center">
-        <div className="w-[90%] sm:w-[85%] md:w-[70%] lg:w-3/5 xl:w-1/2 2xl:w-[45%] 2xl:w-[45%] mb-28">
+        <div className="w-[90%] sm:w-[85%] md:w-[70%] lg:w-3/5 xl:w-1/2 2xl:w-[45%] mb-28">
           <div className="flex flex-col-reverse md:flex-row w-full">
             <div className="w-full md:w-3/5">
               <h1 className="mt-5 md:mt-16 text-4xl lg:text-5xl font-bold">
@@ -30,10 +30,10 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="mt-12 md:mt-16 lg:mt-20">
-            <h2 className="font-bold text-3xl">
+            <h2 className="font-bold text-2xl md:text-3xl">
               Open-Source Projects
             </h2>
-            <div className="flex flex-col items-center mt-8 md:mt-12 lg:mt-14">
+            <div className="flex flex-col items-center mt-6 md:mt-12 lg:mt-14">
               <Image
                 src="/coming-soon-red.gif"
                 height={324}
@@ -42,9 +42,11 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="mt-12 md:mt-16 lg:mt-20">
-            <h2 className="font-bold text-3xl">Book Summaries</h2>
+            <h2 className="font-bold text-2xl md:text-3xl">
+              Book Summaries
+            </h2>
             <div className="flex flex-col space-y-3 mb-5 md:mb-7">
-              <div className="flex flex-row w-full mt-8 mb-1.5">
+              <div className="flex flex-row w-full mt-6 md:mt-8 mb-1.5">
                 <p className="font-thin w-[10%] md:w-[7%] text-xl md:text-2xl my-auto">
                   01
                 </p>
@@ -70,9 +72,11 @@ const Home: NextPage = () => {
             </Link>
           </div>
           <div className="mt-12 md:mt-16 lg:mt-20">
-            <h2 className="font-bold text-3xl">Academic Writing</h2>
+            <h2 className="font-bold text-2xl md:text-3xl">
+              Academic Writing
+            </h2>
             <div className="flex flex-col space-y-3 mb-5 md:mb-7">
-              <div className="flex flex-row w-full mt-8 mb-1.5">
+              <div className="flex flex-row w-full mt-6 md:mt-8 mb-1.5">
                 <p className="font-thin w-[10%] md:w-[7%] text-xl md:text-2xl my-auto">
                   01
                 </p>

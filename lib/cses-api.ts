@@ -1,7 +1,7 @@
 import fs from "fs"
 import matter from "gray-matter";
 import { join } from "path";
-import { POSTS_PATH } from "../utils/mdxUtils/cses"
+import { POSTS_PATH } from "../utils/mdxUtils/cses/introductory-problems"
 
 export function getPostSlugs():string[]{ 
   return fs.readdirSync(POSTS_PATH);

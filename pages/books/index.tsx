@@ -10,9 +10,11 @@ const Books: NextPage = () => {
     <Container title="Books - Mustafa Aljadery">
       <Header />
       <main className="flex flex-col items-center">
-        <div className="w-[45%] mb-32">
-          <h2 className="mt-16 font-bold text-4xl">Book Summaries</h2>
-          <p className="mt-5 w-4/5 font-light">
+        <div className="w-[90%] sm:w-[85%] md:w-[70%] lg:w-3/5 xl:w-1/2 2xl:w-[45%] mb-32">
+          <h2 className="mt-8 md:mt-16 font-bold text-3xl md:text-4xl">
+            Book Summaries
+          </h2>
+          <p className="mt-5 w-full md:w-4/5 text-sm md:text-base font-light">
             Lossless compression of the highest quality books. Yes, my
             brain is the solution to the{' '}
             <a
@@ -25,17 +27,17 @@ const Books: NextPage = () => {
             </a>
             .
           </p>
-          <p className="mt-12 mb-2 text-xl font-bold">
+          <p className="mt-8 md:mt-12 mb-2 text-lg md:text-xl font-bold">
             Email me book recommendations
           </p>
           <a
             href="mailto:aljadery@usc.edu"
-            className="text-lg font-light underline underline-offset-1"
+            className="md:text-lg font-light underline underline-offset-1"
           >
             aljadery[at]usc.edu
           </a>
 
-          <div className="w-3/4 mt-28">
+          <div className="w-full md:w-3/4 mt-16 md:mt-28">
             <p className="text-xl font-light mb-4">Summaries</p>
             <hr />
             <div className="flex flex-row space-x-7 mt-7">
@@ -55,7 +57,7 @@ const Books: NextPage = () => {
                 <p className="mt-1 font-regular text-[#4A4A4A]">
                   Peter Thiel
                 </p>
-                <p className="mt-2 w-3/4 font-light">
+                <p className="mt-2 w-full md:w-3/4 font-light text-sm md:text-base">
                   Undoubtedly one of the greatest books on startups,
                   monopolies, and capitalism. A unique method to
                   understand what makes a great business.
@@ -63,7 +65,7 @@ const Books: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-3/4 mt-28">
+          <div className="w-full md:w-3/4 mt-16 md:mt-28">
             <p className="text-xl font-light mb-4">In the Making</p>
             <hr />
             <div className="mt-7 flex flex-row space-x-7">
@@ -83,7 +85,7 @@ const Books: NextPage = () => {
                 <p className="mt-1 font-regular text-[#4A4A4A]">
                   Alex Xu
                 </p>
-                <p className="mt-2 w-3/4 font-light">
+                <p className="mt-2 w-full md:w-3/4 font-light text-sm md:text-base">
                   An insider guide to system design questions at tech
                   companies. Strategic thinking to approach most
                   questions in a technial interview.
@@ -107,7 +109,7 @@ const Books: NextPage = () => {
                 <p className="mt-1 font-regular text-[#4A4A4A]">
                   Alex Xu
                 </p>
-                <p className="mt-2 w-3/4 font-light">
+                <p className="mt-2 w-full md:w-3/4 font-light text-sm md:text-base">
                   The sequel to Alex Xu’s first book on system
                   designs. It’s a step-by-step guide on how to tackle
                   a system design question.

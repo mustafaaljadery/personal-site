@@ -9,7 +9,7 @@ interface Props {
   href: string;
 }
 
-const ListEntry: React.FC<Props> = ({ image, text, href }) => {
+const ProblemEntry: React.FC<Props> = ({ image, text, href }) => {
   return (
     <>
       <div className="flex flex-row w-full py-1.5 mb-2.5 mt-2.5">
@@ -18,13 +18,13 @@ const ListEntry: React.FC<Props> = ({ image, text, href }) => {
         </div>
         <a
           href={href}
-          className="font-medium hover:font-thin w-[75%] text-2xl"
+          className="font-medium ml-2 md:ml-0 hover:font-thin w-[75%] text-lg md:text-xl md:text-2xl"
         >
           {text}
         </a>
         <a
           href={href}
-          className="h-auto w-[18%] bg-[#303236] hover:bg-[#595959] rounded text-white font-medium text-sm flex flex-col justify-center items-center"
+          className="hidden md:flex h-auto w-[18%] bg-[#303236] hover:bg-[#595959] rounded text-white font-medium text-sm flex flex-col justify-center items-center"
         >
           View Solution
         </a>
@@ -39,32 +39,117 @@ const CSES: NextPage = () => {
     <>
       <Header />
       <main className="flex flex-col items-center">
-        <div className="w-[45%] mb-32">
-          <h2 className="mt-16 font-bold text-4xl text-[#DF732D]">
+        <div className="w-[90%] sm:w-[85%] md:w-[70%] lg:w-3/5 xl:w-1/2 2xl:w-[45%] mb-32">
+          <h2 className="mt-8 md:mt-16 font-bold text-3xl md:text-4xl text-[#DF732D]">
             CSES Problem Set
           </h2>
-          <p className="mt-5 w-4/5 font-light">
+          <p className="mt-5 w-full md:w-4/5 text-sm md:text-base font-light">
             A collection of programming questions that focus on
             algorithms.
           </p>
 
-          <h3 className="mt-20 font-medium text-3xl">
+          <h3 className="mt-12 md:mt-20 font-medium text-2xl md:text-3xl">
             Introductory Problems
           </h3>
           <div className="mt-8">
-            <ListEntry
+            <ProblemEntry
               image="/introduction.svg"
               text="Weird Algorithm"
-              href="/writing/cses/weird-algorithm"
+              href="/projects/cses/introductory-problems/weird-algorithm"
             />
-            <ListEntry
+            <ProblemEntry
               image="/introduction.svg"
-              text="Mising Number"
-              href="/writing/cses/missing-number"
+              text="Missing Number"
+              href="/projects/cses/introductory-problems/missing-number"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Repetitions"
+              href="/projects/cses/introductory-problems/repetitions"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Increasing Array"
+              href="/projects/cses/introductory-problems/increasing-array"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Permutations"
+              href="/projects/cses/introductory-problems/permutations"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Number Spiral"
+              href="/projects/cses/introductory-problems/number-spiral"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Two Knights"
+              href="/projects/cses/introductory-problems/two-knights"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Two Sets"
+              href="/projects/cses/introductory-problems/two-sets"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Bit Strings"
+              href="/projects/cses/introductory-problems/bit-strings"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Trailing Zeros"
+              href="/projects/cses/introductory-problems/trailing-zeros"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Coin Piles"
+              href="/projects/cses/introductory-problems/coin-piles"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Palindrome Reorder"
+              href="/projects/cses/introductory-problems/palindrome-reorder"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Gray Code"
+              href="/projects/cses/introductory-problems/gray-code"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Tower of Hanoi"
+              href="/projects/cses/introductory-problems/tower-of-hanoi"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Creating Strings"
+              href="/projects/cses/introductory-problems/creating-string"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Apple Division"
+              href="/projects/cses/introductory-problems/apple-division"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Chessboard and Queens"
+              href="/projects/cses/introductory-problems/chessboard-and-queens"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Digit Queries"
+              href="/projects/cses/introductory-problems/digit-queries"
+            />
+            <ProblemEntry
+              image="/introduction.svg"
+              text="Grid Paths"
+              href="/projects/cses/introductory-problems/grid-paths"
             />
           </div>
 
-          <h3 className="mt-20 font-medium text-3xl">
+          <h3 className="mt-12 md:mt-20 font-medium text-2xl md:text-3xl">
             Sorting and Searching
           </h3>
         </div>

@@ -7,7 +7,7 @@ interface Props {
 
 const ChapterEntry: React.FC<Props> = ({ text, href }) => {
   return (
-    <li className="ml-[20px] font-regular hover:font-bold text-[#7191B7] text-lg mt-2">
+    <li className="ml-[20px] font-regular hover:font-bold text-[#7191B7] md:text-lg mt-2">
       <Link href={href}>{text}</Link>
     </li>
   );
@@ -16,7 +16,9 @@ const ChapterEntry: React.FC<Props> = ({ text, href }) => {
 const ZeroToOneChapters = () => {
   return (
     <div className="mt-16">
-      <h3 className="text-3xl font-medium">Continue Reading</h3>
+      <h3 className="text-2xl md:text-3xl font-medium">
+        Continue Reading
+      </h3>
       <ul className="list-disc mt-6">
         <ChapterEntry
           href="/books/zero-to-one/1.the-challenge-of-the-future"
@@ -75,7 +77,7 @@ const ZeroToOneChapters = () => {
           text="Ch 14: The Founder's Paradox"
         />
       </ul>
-      <p className="font-light text-lg mt-12">
+      <p className="font-light md:text-lg mt-12">
         Zero to One was orginally written by{' '}
         <a
           href="https://en.wikipedia.org/wiki/Peter_Thiel"

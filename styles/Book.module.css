@@ -13,6 +13,11 @@
   src: url(../fonts/PLAIN-LIGHT.OTF)
 }
 
+@font-face {
+  font-family: Plain Bold;
+  src: url(../fonts/PLAIN-BOLD.OTF);
+}
+
 .book ul{
   font-family: Plain Light;
   list-style-type: disc;
@@ -39,6 +44,18 @@
   font-family: Plain Light;
   font-size: 16px;
   margin-top: 20px;
+}
+
+.book h2{
+  font-family: Plain Bold;
+  font-size: 18px; 
+  margin-top: 24px;
+}
+
+.book h3{
+  font-family: Plain Light;
+  font-size: 18px; 
+  margin-top: 28px;
 }
 
 @media (min-width:600px)  { 
@@ -68,6 +85,17 @@
   font-family: Plain Light;
   font-size: 18px;
   margin-top: 22px;
+}
+.book h2{
+  font-family: Plain Bold;
+  font-size: 20px; 
+  margin-top: 26px;
+}
+
+.book h3{
+  font-family: Plain Light;
+  font-size: 20px; 
+  margin-top: 30px;
 }
 }
 
@@ -99,6 +127,17 @@
   font-size: 20px;
   margin-top: 24px;
 }
+.book h2{
+  font-family: Plain Bold;
+  font-size: 21px; 
+  margin-top: 26px;
+}
+
+.book h3{
+  font-family: Plain Light;
+  font-size: 21px; 
+  margin-top: 30px;
+}
 }
 
 @media (min-width:1281px) { 
@@ -128,5 +167,17 @@
   font-family: Plain Light;
   font-size: 20px;
   margin-top: 28px;
+}
+
+.book h2{
+  font-family: Plain Bold;
+  font-size: 22px; 
+  margin-top: 28px;
+}
+
+.book h3{
+  font-family: Plain Light;
+  font-size: 22px; 
+  margin-top: 32px;
 }
 }

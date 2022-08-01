@@ -1,6 +1,6 @@
 ---
 title: Weird Algorithm 
-description: 
+description: "Consider an algorithm that takes as input a positive integer n. If n is even, the algorithm divides it by two, and if n is odd, the algorithm multiplies it by three and adds one. The algorithm repeats this, until n is one. For example, the sequence for n=3 is as follows"
 date: '2021-03-20'
 image: '/images/bridge.jpg'
 chapter: Introductory Problems 
@@ -9,21 +9,33 @@ time: "1.00 s"
 ---
 
 ## Description
+Consider an algorithm that takes as input a positive integer n. If n is even, the algorithm divides it by two, and if n is odd, the algorithm multiplies it by three and adds one. The algorithm repeats this, until n is one. For example, the sequence for n=3 is as follows:
+
+<div className="flex flex-col items-center">
+3 &rarr; 10 &rarr; 5 &rarr; 16 &rarr; 8 &rarr; 4 &rarr; 2 &rarr; 1
+</div>
+
+Your task is to simulate the execution of the algorithm for a given value of 
 
 ## Input
 
+The only input line contains an integer <span className="font-medium">n</span>.
+
 ## Output
 
+Print a line that contains all values of <span className="font-medium"> n </span> during the algorithm.
+
 ## Constraints
+- 1 &le; n &le; 10^6
 
 ## Example
-#### Input:
-3
-#### Output: 
+### Input:
+- 3
+### Output: 
 - 3 10 5 16 8 4 2 1 
 
 
 ## Solution
-<div className="flex flex-col items-center">
-  <Image src="/carbon-test.png" height={700} width={1200}/>
+<div className="flex flex-col items-center mt-8 mb-8 md:mt-12 md:mb-12">
+  <Image src="/carbon-test.png" height={337.5} width={600}/>
 </div>
